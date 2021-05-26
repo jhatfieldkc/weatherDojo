@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DojoWeather</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper spaceBetween">
+        <div class="title">
+          <h1>DojoWeather</h1>
+        </div>
+        <div class="cities">
+          <p onclick="cityAlert()" class="city">Burbank</p>
+          <p onclick="cityAlert()" class="city">Chicago</p>
+          <p onclick="cityAlert()" class="city">Dallas</p>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper column">
+      <div class="titleBar spaceBetween">
+        <div class="cityName"><h2>San Jose</h2></div>
+        <div id="tempDropDown">
+          <label for="temperature">Show temperature in: </label>
+          <select onchange="temp(this)" name="temperature" id="temperature">
+            <option class="tempFa" value="F">°F</option>
+            <option class="tempCe" value="C">°C</option>
+          </select>
+        </div>
+      </div>
+      <div class="forecast">
+        <div class="today">
+          <h3 class="day">Today</h3>
+          <img class="forecastPic" src="images\some_rain.png" alt="Rainy pic" />
+          <p class="description">some rain</p>
+          <div class="temps">
+            <div class="high"><p class="highs">75</p></div>
+            <div class="low"><p class="lows">65</p></div>
+          </div>
+        </div>
+        <div class="today">
+          <h3 class="day">Tomorrow</h3>
+          <img class="forecastPic" src="images\some_sun.png" alt="Rainy pic" />
+          <p class="description">some sun</p>
+          <div class="temps">
+            <div class="high"><p class="highs">80</p></div>
+            <div class="low"><p class="lows">66</p></div>
+          </div>
+        </div>
+        <div class="today">
+          <h3 class="day">Friday</h3>
+          <img
+            class="forecastPic"
+            src="images\some_clouds.png"
+            alt="Rainy pic"
+          />
+          <p class="description">some clouds</p>
+          <div class="temps">
+            <div class="high"><p class="highs">69</p></div>
+            <div class="low"><p class="lows">61</p></div>
+          </div>
+        </div>
+        <div class="today">
+          <h3 class="day">Saturday</h3>
+          <img class="forecastPic" src="images\some_sun.png" alt="Rainy pic" />
+          <p class="description">some sun</p>
+          <div class="temps">
+            <div class="high"><p class="highs">78</p></div>
+            <div class="low"><p class="lows">70</p></div>
+          </div>
+        </div>
+      </div>
+      <div id="cookies">
+        <img class="cookiePic" src="images\cookie.png" alt="Cookie pic" />
+        <div class="cookieInfo">
+          <h4>Stop! Cookie time</h4>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyse our
+            traffic. <a href="#">Read more...</a>
+          </p>
+        </div>
+        <button onclick="accept()">I Accept</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

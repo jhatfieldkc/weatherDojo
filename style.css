@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* border: 1px dashed red; */
+}
+
+nav {
+  background-color: skyblue;
+  color: white;
+  width: 100%;
+  display: flex;
+}
+
+.title {
+  font-size: 24px;
+  padding: 1rem;
+}
+
+.cities {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 22px;
+}
+
+.wrapper {
+  width: 73%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.titleBar {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+}
+
+.cityName {
+  display: flex;
+  font-size: 22px;
+}
+
+.city {
+  cursor: pointer;
+}
+
+#tempDropDown {
+  display: flex;
+  align-items: center;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.day {
+  text-align: center;
+  font-size: 24px;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.forecastPic {
+  width: 18rem;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.temps {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.high {
+  display: flex;
+  color: red;
+  font-size: 28px;
+}
+
+.low {
+  color: blue;
+  font-size: 28px;
+}
+
+#cookies {
+  display: flex;
+  font-size: 20px;
+  border: 2px solid black;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 73%;
+}
+
+.cookieInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.cookiePic {
+  width: 8rem;
+  margin: 2rem;
+}
+
+button {
+  background-color: skyblue;
+  width: 10rem;
+  padding: 1rem 2rem;
+  margin: 2rem;
+}
